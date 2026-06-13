@@ -1,0 +1,27 @@
+@prefix aco: <https://cosmosambassador.github.io/americancommunicationsonline.github.io/ontology/aco#> .
+@prefix tjtm: <https://cosmosambassador.github.io/americancommunicationsonline.github.io/ontology/tjtm#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+aco:ascension-cosmos-oracles
+    rdfs:label "Ascension Cosmos Oracles" ;
+    a aco:HistoricalMetaphysicalArchiveLabel .
+
+aco:ascension-cosmos-oracles-corp
+    rdfs:label "Ascension Cosmos Oracles Corp" ;
+    a aco:HistoricalCorporateRecord .
+
+tjtm:ascension-master-of-the-ascension-age
+    rdfs:label "Ascension Master of the Ascension Age" ;
+    a tjtm:SymbolicTeachingTitle .
+
+tjtm:enchanted-development
+    rdfs:label "Enchanted Development" ;
+    a tjtm:TeachingMaterial .
+
+aco:ascension-center-organization
+    rdfs:label "Ascension Center Organization" ;
+    a aco:HistoricalOrganizationRecord .
+
+aco:future-time-capsule
+    rdfs:label "ACO Future Time Capsule" ;
+    a aco:PreservationRecord .
