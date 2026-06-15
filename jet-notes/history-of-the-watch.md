@@ -10,7 +10,9 @@ It connects AI growth, daily observation, sky watching, space watching, UFO / SS
 
 **Not on my watch.**
 
-This phrase is used here as a responsibility statement for people with real eyes on the sky, space, history, technology, and public truth.
+This is a widely used responsibility phrase. It is not claimed here as an original TJ Morris phrase.
+
+In this archive, the phrase is used as a responsibility statement for people with real eyes on the sky, space, history, technology, and public truth.
 
 ## Archive Meaning
 
