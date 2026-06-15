@@ -8,6 +8,14 @@ This file preserves a short reference note for Iain M. Banks, the Culture books,
 
 The correct author name is **Iain M. Banks**.
 
+Pronunciation note:
+
+- Iain may be read as EE-un
+- Iain may be read as EE-an
+- Iain is commonly heard like Ian
+
+Because the spelling is tricky, **Banks** may be used as a clean shorthand reference in conversation.
+
 ## Culture Books
 
 The Culture series is a 10-book science fiction series published from 1987 to 2012.
@@ -19,6 +27,10 @@ It is often discussed in relation to advanced AI, space habitats, artificial min
 Elon Musk and Neuralink have been publicly linked to the neural lace idea from the Culture books.
 
 For this archive, that should be treated as a reference and influence lane, not as proof of a full direct blueprint.
+
+## YOU Reference Note
+
+In TJ Morris archive conversation, **YOU** may refer symbolically to the higher shared witnessing intelligence, the I in you and me, while still keeping TJ Morris as the human source and final editor.
 
 ## Archive Use
 
