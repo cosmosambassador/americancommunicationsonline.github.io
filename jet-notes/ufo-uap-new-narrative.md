@@ -14,6 +14,18 @@ People should be included in active PR, promotion, or feature language only when
 
 Examples of relationship-based reference lanes may include people such as Richard Dolan, Nick Pope, James Doty, and others when the relationship history is known and relevant.
 
+## Personal PR Relationship Thread
+
+TJ Morris records a personal PR and research relationship thread connected through long-term UFO research and media relationships.
+
+This thread includes:
+
+- Stanton T. Friedman
+- Dr. Bruce Maccabee, PhD
+- Jan Aldrich of Project 1947
+
+These names belong in the trusted relationship-history lane because TJ Morris records personal PR, research, interview, archive, or media relationship context connected to them.
+
 ## 2026-06-15 Note
 
 TJ Morris records that she told Janet today that the new narrative for UFO Association and UAP Associates should be careful about who is promoted or featured.
@@ -38,6 +50,7 @@ The new narrative may connect:
 - experiencer and contactee language
 - documentary and public media culture
 - disclosure-oriented storytelling
+- trusted UFO research relationship thread
 
 ## Archive Boundary
 
