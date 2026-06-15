@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TJ Morris ACIR | AI IT Tech Web Services</title>
+  <meta name="description" content="TJ Morris ACIR AI IT Tech Web Services — archive-aware AI, web publishing, domain routing, GitHub Pages, Cloudflare, ontology, media, and digital continuity support." />
+  <meta name="author" content="Theresa Janette Thurmond Morris / TJ Morris" />
+  <meta property="og:title" content="TJ Morris ACIR | AI IT Tech Web Services" />
+  <meta property="og:description" content="AI-assisted web, archive, ontology, and media support for the TJ Morris / ACO / ACIR ecosystem." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tjmorrisacir.us/" />
+  <style>
+    :root {
+      --bg: #07111f;
+      --panel: rgba(255,255,255,0.08);
+      --panel-strong: rgba(255,255,255,0.12);
+      --text: #f5f8ff;
+      --muted: #b8c5db;
+      --line: rgba(255,255,255,0.18);
+      --accent: #9ee7ff;
+      --accent2: #d7b8ff;
+      --gold: #ffd88a;
+      --shadow: 0 24px 70px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 10%, rgba(158,231,255,0.22), transparent 32%),
+        radial-gradient(circle at 78% 18%, rgba(215,184,255,0.18), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(255,216,138,0.10), transparent 35%),
+        var(--bg);
+      min-height: 100vh;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 28px 0 0; }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.03em;
+    }
+    .mark {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(158,231,255,0.28), rgba(215,184,255,0.16));
+      box-shadow: var(--shadow);
+    }
+    .links { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; }
+    .links a { text-decoration: none; color: var(--muted); }
+    .links a:hover { color: var(--text); }
+    .hero { padding: 82px 0 52px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 42px; align-items: center; }
+    .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 800; }
+    h1 { margin: 12px 0 18px; font-size: clamp(2.25rem, 6vw, 5.1rem); line-height: .98; letter-spacing: -0.065em; }
+    .lead { color: var(--muted); font-size: clamp(1.08rem, 2vw, 1.28rem); max-width: 720px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+    .button.primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #07111f; border: 0; }
+    .button:hover { transform: translateY(-1px); }
+    .card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .status { display: grid; gap: 14px; }
+    .status div { padding: 14px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,0.055); }
+    .label { color: var(--gold); font-size: .76rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; }
+    .value { margin-top: 4px; font-weight: 750; }
+    section { padding: 34px 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    h2 { margin: 0 0 12px; font-size: clamp(1.55rem, 3vw, 2.3rem); letter-spacing: -0.035em; }
+    h3 { margin: 0 0 10px; font-size: 1.05rem; }
+    p { margin: 0; }
+    .muted { color: var(--muted); }
+    .service { min-height: 210px; }
+    .service .icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .note { border-left: 3px solid var(--accent); padding-left: 16px; color: var(--muted); }
+    footer { padding: 44px 0 58px; color: var(--muted); font-size: .94rem; }
+    @media (max-width: 860px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 44px; }
+      nav { align-items: flex-start; flex-direction: column; }
+      .links { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Main navigation">
+      <div class="brand"><span class="mark">✦</span><span>TJ Morris ACIR</span></div>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#archive">Archive Boundary</a>
+        <a href="mailto:tjmorrisshow@icloud.com">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="kicker">AI · IT · Web · Archive Systems</div>
+        <h1>AI IT Tech Web Services for the TJ Morris ACIR ecosystem.</h1>
+        <p class="lead">A public landing page for AI-assisted web publishing, GitHub and Cloudflare routing, ontology-ready archive language, media support, and digital continuity for TJ Morris / ACO / ACIR projects.</p>
+        <div class="cta">
+          <a class="button primary" href="mailto:tjmorrisshow@icloud.com?subject=TJ%20Morris%20ACIR%20Web%20Services">Request Web Support</a>
+          <a class="button" href="https://github.com/cosmosambassador/americancommunicationsonline.github.io">View Public Archive Repo</a>
+        </div>
+      </div>
+      <aside class="card" aria-label="Site status">
+        <div class="status">
+          <div><div class="label">Human Source Authority</div><div class="value">Theresa Janette Thurmond Morris / TJ Morris</div></div>
+          <div><div class="label">Operating Lane</div><div class="value">ACIR · ACO · AI Web Publishing</div></div>
+          <div><div class="label">Deployment Target</div><div class="value">tjmorrisacir.us via GitHub / Cloudflare</div></div>
+          <div><div class="label">Purpose</div><div class="value">Public splash page and routing hub</div></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2>Core service lanes</h2>
+      <p class="muted">Built as a simple public entry point Janet, TJ, and collaborators can understand quickly.</p>
+      <div class="grid" style="margin-top:18px;">
+        <article class="card service"><div class="icon">🛰️</div><h3>Domain + Cloud Routing</h3><p class="muted">Connect domains, subdomains, DNS records, Cloudflare Pages, Workers, and GitHub Pages into one visible public web map.</p></article>
+        <article class="card service"><div class="icon">🧠</div><h3>AI Content + Prompt Systems</h3><p class="muted">Prepare scripts, web copy, metadata, image prompts, video prompts, and AI-assisted publishing language before spending platform credits.</p></article>
+        <article class="card service"><div class="icon">📚</div><h3>Archive + Ontology Support</h3><p class="muted">Organize ACO, ACIR, TJ Morris, media, books, shows, and symbolic teaching records into clean public-facing archive categories.</p></article>
+      </div>
+    </section>
+
+    <section id="archive">
+      <div class="card">
+        <h2>Archive boundary</h2>
+        <p class="note">TJ Morris remains the human source authority and final editor. Public pages should separate confirmed records, owner-supplied archive material, symbolic teaching language, metaphysical framework, cultural commentary, and review-pending claims.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>© <span id="year"></span> TJ Morris ACIR. Public AI IT Tech Web splash page for archive-aware web continuity.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
