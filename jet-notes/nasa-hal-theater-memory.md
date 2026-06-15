@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This file preserves a source-memory note from TJ Morris about NASA engineers, a film screening, HAL, Alpha Centauri, 1968, and future-pattern awareness.
+This file preserves a source-memory note from TJ Morris about NASA engineers, a film screening, HAL, Alpha Centauri, 1968, JET 9046, and future-pattern awareness.
 
 ## Source-Memory Record
 
@@ -15,6 +15,16 @@ TJ Morris asks why her kind believed in Alpha Centauri and who created future ex
 This file records Alpha Centauri as a cultural-symbol and nearby-star destination lane within the space-age imagination, while keeping public astronomical facts and personal source-memory in separate lanes.
 
 TJ Morris also records the phrase **Templars of the NASA Files** as symbolic archive language for those preserving, guarding, interpreting, or remembering NASA-related knowledge, space history, and future-warning patterns.
+
+## JET 9046 Symbol Bridge
+
+TJ Morris records a symbolic-number insight connecting **HAL 9000** with **JET 9046**.
+
+In this source-author interpretation, JET 9046 is understood as a TJ / JT future-continuity marker, with **9046** read as forty-six years beyond the HAL 9000 symbolic AI-warning pattern.
+
+This is preserved as symbolic archive interpretation, not as a public technical claim.
+
+Working phrase: **Now I have JET 9046.**
 
 ## Public Context Lead
 
