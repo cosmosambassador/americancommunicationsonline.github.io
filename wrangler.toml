@@ -1,0 +1,15 @@
+name = "atlas-ai"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[[routes]]
+pattern = "atlas.tjmorrismedia.com/*"
+zone_name = "tjmorrismedia.com"
+
+[[routes]]
+pattern = "luccenzone.tjmorrismedia.com"
+zone_name = "tjmorrismedia.com"
+
+[[routes]]
+pattern = "*.tjmorrismedia.com/*"
+zone_name = "tjmorrismedia.com"
