@@ -53,6 +53,7 @@ We serve as a **truth-based knowledge repository** at the intersection of:
 ## 📎 Connect With Us
 
 - 🌍 Website: [AmericanCommunicationsOnline.com](https://www.americancommunicationsonline.com)
+- 🤝 ACO Club community/member doorway: [ACOClub.app](https://acoclub.app/)
 - 🛰️ ACIR Archives: `coming soon`
 - 📘 ACO Press: `coming soon`
 - 🔗 Join our Codex Mission: [GitHub - MyChatGPT-AI](https://github.com/cosmosambassador/MyChatGPT-AI)
