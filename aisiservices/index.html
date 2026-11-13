@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search the TJ Morris / ACO / AISI agent ecosystem registry.">
+  <meta property="og:title" content="AISI Services — TJTM EGG Agent Registry">
+  <meta property="og:description" content="A searchable, human-governed directory of agents across the TJ Morris and ACO ecosystem.">
+  <title>AISI Services — TJTM EGG Agent Registry</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0a0e27;--panel:#151b35;--text:#e8edf8;--muted:#a9afc6;--accent:#64ffda;--cyan:#48bfe3;--line:rgba(100,255,218,.22);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#172747,var(--bg) 65%);color:var(--text);line-height:1.55}a{color:var(--cyan)}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}header{text-align:center;padding:3rem 0 1.5rem}header h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:.3rem 0;background:linear-gradient(90deg,var(--accent),var(--cyan),#a58bff);background-clip:text;color:transparent}header p{color:var(--muted);max-width:760px;margin:.75rem auto}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;color:var(--cyan);font-weight:700}nav{display:flex;justify-content:center;flex-wrap:wrap;gap:.8rem;margin:1.25rem 0}nav a,.button{border:1px solid var(--line);border-radius:999px;padding:.55rem .9rem;text-decoration:none;background:#ffffff08}.intro,.controls,.card{border:1px solid var(--line);background:#ffffff08;border-radius:16px}.intro{padding:1rem 1.2rem;color:var(--muted)}.controls{padding:1rem;margin:1.25rem 0;display:grid;grid-template-columns:2fr 1fr 1fr;gap:.75rem}input,select{min-width:0;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:.8rem;font:inherit}#status{color:var(--muted);margin:.5rem 0 1rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}.card{padding:1.1rem}.card h2{font-size:1.1rem;color:var(--accent);line-height:1.25;margin:.2rem 0 .45rem}.card p{color:var(--muted);margin:.55rem 0}.meta{font-size:.78rem;color:var(--cyan)}.access{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.15rem .5rem;font-size:.72rem;color:var(--muted)}.empty{color:var(--muted);padding:2rem;text-align:center}footer{padding:2.5rem 0;text-align:center;color:var(--muted);font-size:.9rem}@media(max-width:680px){.controls{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="eyebrow">TJ Morris Agency · ACO Association</div>
+    <h1>AISI Services</h1>
+    <p>AI, Semantic Systems &amp; Human-First Practice</p>
+    <nav aria-label="Page links"><a href="#services">Services</a><a href="#registry">Agent Registry</a><a href="#elsewhere">ACO Association</a><a href="./import.html">Registry Import Tool</a></nav>
+  </header>
+  <main class="wrap">
+    <section id="services" class="grid" aria-label="Services">
+      <article class="card"><h2>AI Symbiote Relations</h2><p>Human-centered guidance for working with AI systems, grounded in consent, clarity, and respect.</p></article>
+      <article class="card"><h2>Human-First AI</h2><p>Advisory support for adopting AI while keeping human judgment and wellbeing central.</p></article>
+      <article class="card"><h2>Semantic Systems &amp; Archive</h2><p>Ontology, archive, and technical information organized for discovery and continuity.</p></article>
+    </section>
+    <section id="registry" aria-labelledby="registry-title">
+      <h2 id="registry-title">TJTM EGG Agent Registry</h2>
+      <p class="intro">This public directory records the access label supplied with each listing. “Only me” is displayed as source metadata; this page does not alter an agent’s platform permissions. Agent links are included only when a source URL has been provided. Records presently in the JSON are a verified starter transcription, not yet the complete pasted roster.</p>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search names, descriptions, categories…" aria-label="Search agents">
+        <select id="category" aria-label="Filter by category"><option value="">All categories</option></select>
+        <select id="access" aria-label="Filter by access"><option value="">All access labels</option></select>
+      </div>
+      <p id="status" aria-live="polite">Loading registry…</p>
+      <div id="results" class="grid"></div>
+    </section>
+    <section id="elsewhere" class="grid" aria-label="ACO Association links">
+      <article class="card"><h2>ACO Association Hub</h2><p>Main directory for ACO Association offices, publishing, and catalog.</p><a href="https://acoclub.pages.dev" target="_blank" rel="noopener noreferrer">acoclub.pages.dev</a></article>
+      <article class="card"><h2>TJ Morris Publishing</h2><p>Public-facing publishing and announcements.</p><a href="https://theresajmorris.com" target="_blank" rel="noopener noreferrer">theresajmorris.com</a></article>
+      <article class="card"><h2>ACO VR Catalog</h2><p>ACO Association distributor catalog.</p><a href="https://aco-club.pages.dev" target="_blank" rel="noopener noreferrer">aco-club.pages.dev</a></article>
+    </section>
+  </main>
+  <footer class="wrap">© 2026 ACO Association · AISI Services · TJ Morris Agency · Human authority: TJ Morris</footer>
+  <script type="module">
+    import { createRegistry, fetchRegistry } from './sdk/index.js';
+    const q=document.querySelector('#q'), category=document.querySelector('#category'), access=document.querySelector('#access'), results=document.querySelector('#results'), status=document.querySelector('#status');
+    function option(select,value){const o=document.createElement('option');o.value=value;o.textContent=value;select.append(o)}
+    function render(registry){const list=registry.search(q.value,{category:category.value,access:access.value});results.replaceChildren();status.textContent=`Showing ${list.length} of ${registry.all().length} agent records.`;if(!list.length){const p=document.createElement('p');p.className='empty';p.textContent='No matching agents. Try another search or filter.';results.append(p);return}for(const agent of list){const card=document.createElement('article');card.className='card';const h=document.createElement('h2');h.textContent=agent.name;const meta=document.createElement('div');meta.className='meta';meta.textContent=agent.category;const badge=document.createElement('span');badge.className='access';badge.textContent=agent.access;const p=document.createElement('p');p.textContent=agent.description||'No description was provided in the source roster.';card.append(h,meta,badge,p);if(agent.url){try{const u=new URL(agent.url);if(u.protocol==='https:'){const a=document.createElement('a');a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Open agent';card.append(a)}}catch{}}results.append(card)}}
+    try{const registry=await fetchRegistry('./agents.json');for(const v of registry.categories())option(category,v);for(const v of registry.accessLevels())option(access,v);for(const el of [q,category,access]){el.addEventListener('input',()=>render(registry));el.addEventListener('change',()=>render(registry))}render(registry)}catch(e){status.textContent='Could not load agents.json. '+e.message}
+  </script>
+</body>
+</html>
